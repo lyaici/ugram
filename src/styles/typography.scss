@@ -1,0 +1,108 @@
+@import './font.scss';
+@import './color.scss';
+@import './display.scss';
+
+a {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  @media screen and (min-width: $mobile){
+    font-size: 16px;
+    white-space: nowrap;
+  }
+  @media screen and (max-width: $mobile){
+    font-size: 14px;
+  }
+  cursor: pointer;
+  &.white {
+    color: white;
+  }
+  &.light {
+    color: $main-color;
+  }
+  &.dark {
+    color: $secondary-color;
+  }
+  &.fency {
+    background: $fency-color-text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+span {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  @media screen and (min-width: $mobile){
+    font-size: 16px;
+    white-space: nowrap;
+  }
+  @media screen and (max-width: $mobile){
+    font-size: 14px;
+  }
+  &.light {
+    color: $main-color;
+  }
+  &.dark {
+    color: $secondary-color;
+  }
+  &.fency {
+    background: $fency-color-text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &.error {
+    color: $error-color;
+  }
+}
+
+label {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  @media screen and (min-width: $mobile){
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  @media screen and (max-width: $mobile){
+    font-size: 12px;
+  }
+  color: $main-color;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  @media screen and (min-width: $mobile) {
+    font-size: 35px;
+    white-space: nowrap;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 25px;
+  }
+  text-decoration: none;
+  color: white;
+  &.light {
+    color: $main-color;
+  }
+  &.dark {
+    color: $secondary-color;
+  }
+  &.fency {
+    background: $fency-color;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  @media screen and (min-width: $mobile){
+    font-size: 16px;
+    white-space: nowrap;
+  }
+  @media screen and (max-width: $mobile){
+    font-size: 14px;
+  }
+  color: $main-color;
+}
